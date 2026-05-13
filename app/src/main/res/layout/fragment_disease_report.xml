@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="124dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/disease_title"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/select_animal"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/animalSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/select_vet_doctor"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/doctorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/symptoms"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <CheckBox android:id="@+id/feverCheck" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:text="@string/fever" />
+            <CheckBox android:id="@+id/notEatingCheck" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:text="@string/not_eating" />
+            <CheckBox android:id="@+id/limpingCheck" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:text="@string/limping" />
+            <CheckBox android:id="@+id/diarrheaCheck" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:text="@string/diarrhea" />
+            <CheckBox android:id="@+id/woundCheck" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:text="@string/wound" />
+            <CheckBox android:id="@+id/swellingCheck" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:text="@string/swelling" />
+        </GridLayout>
+
+        <EditText
+            android:id="@+id/notesInput"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="12dp"
+            android:gravity="top"
+            android:hint="@string/notes"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/consultationFeeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/consultation_fee"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/locationPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/location_pending"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/submitReportButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="28dp"
+            android:text="@string/submit_report" />
+    </LinearLayout>
+</ScrollView>

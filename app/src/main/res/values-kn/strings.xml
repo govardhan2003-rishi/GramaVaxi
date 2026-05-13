@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ಗ್ರಾಮ-ವ್ಯಾಕ್ಸಿ</string>
+    <string name="login_title">ರೈತ ಲಾಗಿನ್</string>
+    <string name="login_subtitle">ರೈತ ಖಾತೆ ತೆರೆಯಿರಿ ಅಥವಾ ಹೊಸ ಖಾತೆ ರಚಿಸಿ. ಪ್ರತಿಯೊಬ್ಬ ರೈತರು ತಮ್ಮ ಪ್ರಾಣಿಗಳನ್ನಷ್ಟೇ ನೋಡುತ್ತಾರೆ.</string>
+    <string name="farmer_name">ರೈತರ ಹೆಸರು</string>
+    <string name="village_name">ಗ್ರಾಮದ ಹೆಸರು</string>
+    <string name="login_phone">ಫೋನ್ ಸಂಖ್ಯೆ</string>
+    <string name="login_password">ಪಾಸ್ವರ್ಡ್</string>
+    <string name="login">ಲಾಗಿನ್</string>
+    <string name="create_account">ಖಾತೆ ರಚಿಸಿ</string>
+    <string name="logout">ಲಾಗ್ ಔಟ್</string>
+    <string name="login_required">ಫೋನ್ ಸಂಖ್ಯೆ ಮತ್ತು ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ.</string>
+    <string name="register_required">ರೈತರ ಹೆಸರು, ಗ್ರಾಮ, ಫೋನ್ ಸಂಖ್ಯೆ ಮತ್ತು ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ.</string>
+    <string name="login_failed">ಹೊಂದುವ ರೈತ ಖಾತೆ ಕಂಡುಬಂದಿಲ್ಲ.</string>
+    <string name="account_exists">ಈ ಫೋನ್ ಸಂಖ್ಯೆಗೆ ಈಗಾಗಲೇ ಖಾತೆ ಇದೆ.</string>
+    <string name="firebase_sync_failed">Firebase ಸಂಪರ್ಕಿಸಲಾಗಿದೆ, ಆದರೆ Firestore ಬರಹವನ್ನು ಸ್ವೀಕರಿಸಲಿಲ್ಲ. ಇಂಟರ್ನೆಟ್ ಮತ್ತು Firestore rules ಪರಿಶೀಲಿಸಿ.</string>
+    <string name="firebase_sync_failed_detail">Firebase ಉಳಿಸುವಿಕೆ ವಿಫಲವಾಗಿದೆ: %1$s</string>
+    <string name="sms_alerts_enabled">ಖಾತೆ ಸ್ಥಳೀಯವಾಗಿ ತೆರೆಯಲಾಗಿದೆ. ಈ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಗೆ SMS ಎಚ್ಚರಿಕೆಗಳು ಸಕ್ರಿಯವಾಗಿವೆ.</string>
+    <string name="dashboard_title">ಡ್ಯಾಶ್ಬೋರ್ಡ್</string>
+    <string name="ledger_title">ಪ್ರಾಣಿ ದಾಖಲೆ</string>
+    <string name="calendar_title">ಲಸಿಕೆ ಕ್ಯಾಲೆಂಡರ್</string>
+    <string name="disease_title">ಅನಾರೋಗ್ಯ ವರದಿ</string>
+    <string name="notifications_title">ಎಚ್ಚರಿಕೆಗಳು</string>
+    <string name="profile_title">ಪ್ರೊಫೈಲ್</string>
+    <string name="profile_summary">%1$s - %2$s</string>
+    <string name="profile_missing">ಪ್ರೊಫೈಲ್ ವಿವರಗಳು ಲಭ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಲಾಗಿನ್ ಮಾಡಿ.</string>
+    <string name="profile_village_value">ಗ್ರಾಮ: %1$s</string>
+    <string name="profile_phone_value">ಫೋನ್: %1$s</string>
+    <string name="edit_profile">ಪ್ರೊಫೈಲ್ ತಿದ್ದುಪಡಿ</string>
+    <string name="save_profile">ಪ್ರೊಫೈಲ್ ಉಳಿಸಿ</string>
+    <string name="profile_saved">ಪ್ರೊಫೈಲ್ ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ.</string>
+    <string name="add_animal">ಪ್ರಾಣಿ ಸೇರಿಸಿ</string>
+    <string name="report_sick">ಅನಾರೋಗ್ಯ ವರದಿ</string>
+    <string name="total_animals">ಒಟ್ಟು ಪ್ರಾಣಿಗಳು</string>
+    <string name="due_soon">ಶೀಘ್ರ ಬಾಕಿ</string>
+    <string name="sick_count">ಅನಾರೋಗ್ಯ</string>
+    <string name="recent_animals">ಇತ್ತೀಚಿನ ಪ್ರಾಣಿಗಳು</string>
+    <string name="camp_banner">ನಾಳೆ ದೇವಾಲಯ ಚೌಕದಲ್ಲಿ ವೈದ್ಯರ ಶಿಬಿರ. ಲಸಿಕೆ ಕಾರ್ಡ್ ಸಿದ್ಧವಾಗಿಡಿ.</string>
+    <string name="animal_name">ಪ್ರಾಣಿಯ ಹೆಸರು</string>
+    <string name="unique_animal_id_value">ಪ್ರಾಣಿ ID: %1$s</string>
+    <string name="breed">ತಳಿ</string>
+    <string name="age">ವಯಸ್ಸು ತಿಂಗಳಲ್ಲಿ</string>
+    <string name="owner_phone">SMS ಎಚ್ಚರಿಕೆಗಳಿಗಾಗಿ ರೈತರ ಫೋನ್ ಸಂಖ್ಯೆ</string>
+    <string name="animal_type">ಪ್ರಾಣಿ ಪ್ರಕಾರ</string>
+    <string name="choose_photo">ಫೋಟೋ ಆಯ್ಕೆ</string>
+    <string name="take_photo">ಫೋಟೋ ತೆಗೆದುಕೊಳ್ಳಿ</string>
+    <string name="camera_permission_required">ಪ್ರಾಣಿಯ ಫೋಟೋ ತೆಗೆದುಕೊಳ್ಳಲು ಕ್ಯಾಮೆರಾ ಅನುಮತಿ ಬೇಕು.</string>
+    <string name="camera_capture_failed">ಕ್ಯಾಮೆರಾ ಫೋಟೋ ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="last_vaccination">ಕೊನೆಯ ಲಸಿಕೆ</string>
+    <string name="next_shot">ಮುಂದಿನ ಡೋಸ್:</string>
+    <string name="next_shot_preview">ಮುಂದಿನ ಡೋಸ್: %1$s</string>
+    <string name="save_animal">ಪ್ರಾಣಿ ಉಳಿಸಿ</string>
+    <string name="animal_saved">ಪ್ರಾಣಿ ಉಳಿಸಲಾಗಿದೆ ಮತ್ತು ಜ್ಞಾಪನೆ ನಿಗದಿಯಾಗಿದೆ</string>
+    <string name="fill_required_fields">ಹೆಸರು, ತಳಿ, ವಯಸ್ಸು ಮತ್ತು ಫೋನ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ.</string>
+    <string name="empty_animals">ಇನ್ನೂ ಪ್ರಾಣಿಗಳನ್ನು ನೋಂದಾಯಿಸಿಲ್ಲ. ಮೊದಲ ಆರೋಗ್ಯ ಕಾರ್ಡ್ ಆರಂಭಿಸಲು ಪ್ರಾಣಿ ಸೇರಿಸಿ.</string>
+    <string name="empty_calendar">ಪ್ರಾಣಿಗಳನ್ನು ಸೇರಿಸಿದ ನಂತರ ಲಸಿಕೆ ದಿನಾಂಕಗಳು ಇಲ್ಲಿ ಕಾಣುತ್ತವೆ.</string>
+    <string name="calendar_row">%1$s\nಬಾಕಿ: %2$s\nಸ್ಥಿತಿ: %3$s</string>
+    <string name="status_ok">ಸರಿಯಾಗಿದೆ</string>
+    <string name="status_due">ಶೀಘ್ರ ಬಾಕಿ</string>
+    <string name="status_overdue">ಮೀರಿದೆ</string>
+    <string name="status_sick">ಅನಾರೋಗ್ಯ</string>
+    <string name="select_animal">ಪ್ರಾಣಿ ಆಯ್ಕೆ</string>
+    <string name="symptoms">ಲಕ್ಷಣಗಳು</string>
+    <string name="notes">ವೈದ್ಯರಿಗೆ ಟಿಪ್ಪಣಿ</string>
+    <string name="submit_report">ವೈದ್ಯ ವರದಿ ಕಳುಹಿಸಿ</string>
+    <string name="report_sent">ವೈದ್ಯ ಎಚ್ಚರಿಕೆ ಉಳಿಸಲಾಗಿದೆ. ಪ್ರಾಣಿಯನ್ನು ಅನಾರೋಗ್ಯವೆಂದು ಗುರುತಿಸಲಾಗಿದೆ.</string>
+    <string name="no_animals_for_report">ಅನಾರೋಗ್ಯ ವರದಿ ಮಾಡುವ ಮೊದಲು ಪ್ರಾಣಿ ಸೇರಿಸಿ.</string>
+    <string name="choose_symptom">ಕನಿಷ್ಠ ಒಂದು ಲಕ್ಷಣ ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="fever">ಜ್ವರ</string>
+    <string name="not_eating">ತಿನ್ನುತ್ತಿಲ್ಲ</string>
+    <string name="limping">ಕುಂಟುವುದು</string>
+    <string name="diarrhea">ಭೇದಿ</string>
+    <string name="wound">ಗಾಯ</string>
+    <string name="swelling">ಊತ</string>
+    <string name="notification_title">ಲಸಿಕೆ 3 ದಿನಗಳಲ್ಲಿ ಬಾಕಿ</string>
+    <string name="notification_message">%1$s ಗೆ %2$s ರಂದು ಲಸಿಕೆ ಬೇಕು. ದೇವಾಲಯ ಚೌಕದಲ್ಲಿ ಶಿಬಿರ.</string>
+    <string name="sms_permission_missing_title">SMS ಅನುಮತಿ ಬೇಕು</string>
+    <string name="sms_permission_missing_body">ಲಸಿಕೆ ಎಚ್ಚರಿಕೆಗಳನ್ನು SMS ಮೂಲಕ ಕಳುಹಿಸಲು SMS ಅನುಮತಿ ನೀಡಿ.</string>
+    <string name="sms_failed_title">SMS ಎಚ್ಚರಿಕೆ ವಿಫಲವಾಗಿದೆ</string>
+    <string name="sms_failed_body">ರೈತರ ಫೋನ್ ಸಂಖ್ಯೆ ಮತ್ತು ಸಾಧನದ SIM/SMS ಬೆಂಬಲ ಪರಿಶೀಲಿಸಿ.</string>
+    <string name="vaccine_reminder_channel">ಲಸಿಕೆ ಜ್ಞಾಪನೆಗಳು</string>
+    <string name="vaccine_reminder_channel_desc">ಮುಂದಿನ ಪ್ರಾಣಿ ಲಸಿಕೆ ದಿನಾಂಕಗಳ ಎಚ್ಚರಿಕೆಗಳು</string>
+    <string name="notification_center_body">ಶಿಬಿರ ಎಚ್ಚರಿಕೆಗಳು ಮತ್ತು ಲಸಿಕೆ ಜ್ಞಾಪನೆಗಳು ಈ ಫೋನಿನಲ್ಲೇ ನಿಗದಿಯಾಗುತ್ತವೆ. ಮುಂದಿನ ಡೋಸಿಗೆ ಮೂರು ದಿನ ಮುಂಚೆ ಎಚ್ಚರಿಕೆ ಬರುತ್ತದೆ.</string>
+    <string name="language_title">ಅಪ್ ಭಾಷೆ</string>
+    <string name="customer_feedback_title">ಗ್ರಾಹಕ ಪ್ರತಿಕ್ರಿಯೆ</string>
+    <string name="feedback_from_profile">%1$s (%2$s) ಅವರ ಪ್ರತಿಕ್ರಿಯೆ</string>
+    <string name="feedback_name">ನಿಮ್ಮ ಹೆಸರು ಅಥವಾ ಗ್ರಾಮ</string>
+    <string name="feedback_rating">ಈ ಅಪ್ ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ</string>
+    <string name="feedback_message">ನಿಮ್ಮ ಪ್ರತಿಕ್ರಿಯೆ ಬರೆಯಿರಿ</string>
+    <string name="submit_feedback">ಪ್ರತಿಕ್ರಿಯೆ ಸಲ್ಲಿಸಿ</string>
+    <string name="feedback_required">ಸಲ್ಲಿಸುವ ಮೊದಲು ಪ್ರತಿಕ್ರಿಯೆ ಬರೆಯಿರಿ.</string>
+    <string name="feedback_saved">ಪ್ರತಿಕ್ರಿಯೆ ಉಳಿಸಲಾಗಿದೆ. ಧನ್ಯವಾದಗಳು.</string>
+    <string name="no_feedback_yet">ಇನ್ನೂ ಪ್ರತಿಕ್ರಿಯೆ ಸಲ್ಲಿಸಲಾಗಿಲ್ಲ.</string>
+    <string name="anonymous_feedback">ಅನಾಮಧೇಯ</string>
+    <string name="latest_feedback">ಇತ್ತೀಚಿನ ಪ್ರತಿಕ್ರಿಯೆ: %1$s\nಮೌಲ್ಯಮಾಪನ: %2$d/5\n%3$s</string>
+    <string name="customer_support_title">ಗ್ರಾಹಕ ಸಹಾಯ</string>
+    <string name="customer_support_body">ಲಾಗಿನ್, ಪ್ರಾಣಿ ದಾಖಲೆಗಳು, ಲಸಿಕೆ ಜ್ಞಾಪನೆಗಳು ಅಥವಾ Firebase sync ಬಗ್ಗೆ ಸಹಾಯ ಬೇಕೇ? ಗ್ರಾಮ-ವ್ಯಾಕ್ಸಿ ಸಹಾಯವನ್ನು ಸಂಪರ್ಕಿಸಿ.</string>
+    <string name="call_support">ಸಹಾಯಕ್ಕೆ ಕರೆ ಮಾಡಿ</string>
+    <string name="email_support">ಸಹಾಯಕ್ಕೆ ಇಮೇಲ್ ಮಾಡಿ</string>
+    <string name="customer_support_email_subject">ಗ್ರಾಮ-ವ್ಯಾಕ್ಸಿ ಸಹಾಯ ವಿನಂತಿ</string>
+    <string name="support_app_missing">ಈ ಸಹಾಯ ಕ್ರಿಯೆಗೆ ಸೂಕ್ತವಾದ ಅಪ್ಲಿಕೇಶನ್ ಕಂಡುಬಂದಿಲ್ಲ.</string>
+    <string name="doctor_login_title">ವೈದ್ಯರ ಲಾಗಿನ್</string>
+    <string name="farmer_signup_title">ರೈತ ನೋಂದಣಿ</string>
+    <string name="doctor_signup_title">ವೈದ್ಯರ ನೋಂದಣಿ</string>
+    <string name="doctor_login_subtitle">ಹತ್ತಿರದ ಅನಾರೋಗ್ಯ ಪ್ರಾಣಿ ವರದಿಗಳನ್ನು ಪಡೆಯಲು ವೈದ್ಯರ ಖಾತೆ ತೆರೆಯಿರಿ ಅಥವಾ ರಚಿಸಿ.</string>
+    <string name="signup_subtitle">ನಿಮ್ಮ ಖಾತೆ ರಚಿಸಿ. ಈ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಗೆ SMS ಎಚ್ಚರಿಕೆಗಳು ಬರುತ್ತವೆ.</string>
+    <string name="role_farmer">ರೈತ</string>
+    <string name="role_doctor">ವೈದ್ಯರು</string>
+    <string name="login_otp">OTP ಪರಿಶೀಲನಾ ಕೋಡ್</string>
+    <string name="send_otp">OTP ಕಳುಹಿಸಿ</string>
+    <string name="continue_to_otp">OTP ಗೆ ಮುಂದುವರಿಸಿ</string>
+    <string name="sign_up">ನೋಂದಣಿ</string>
+    <string name="back_to_login">ಲಾಗಿನ್‌ಗೆ ಮರಳಿ</string>
+    <string name="sign_up_and_verify">ನೋಂದಣಿ ಮಾಡಿ ಪರಿಶೀಲಿಸಿ</string>
+    <string name="submit_otp">OTP ಸಲ್ಲಿಸಿ</string>
+    <string name="back">ಹಿಂದೆ</string>
+    <string name="forgot_password">ಪಾಸ್ವರ್ಡ್ ಮರೆತಿರಾ</string>
+    <string name="details_required">ಹೆಸರು ಮತ್ತು ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ.</string>
+    <string name="basic_details">ಮೂಲ ವಿವರಗಳು</string>
+    <string name="basic_details_required">ನೋಂದಣಿಗೆ ಮೊದಲು ಮೂಲ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ.</string>
+    <string name="date_of_birth">ಜನ್ಮ ದಿನಾಂಕ</string>
+    <string name="date_of_birth_required">ನೋಂದಣಿಗೆ ಮೊದಲು ಜನ್ಮ ದಿನಾಂಕ ನಮೂದಿಸಿ.</string>
+    <string name="profile_photo">ಪ್ರೊಫೈಲ್ ಫೋಟೋ</string>
+    <string name="profile_photo_selected">ಪ್ರೊಫೈಲ್ ಫೋಟೋ ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="email_optional">ಇಮೇಲ್ ವಿಳಾಸ (ಐಚ್ಛಿಕ)</string>
+    <string name="confirm_password">ಪಾಸ್ವರ್ಡ್ ದೃಢೀಕರಿಸಿ</string>
+    <string name="verify">ಪರಿಶೀಲಿಸಿ</string>
+    <string name="password_required">ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ.</string>
+    <string name="passwords_do_not_match">ಪಾಸ್ವರ್ಡ್‌ಗಳು ಹೊಂದಿಕೆಯಾಗುತ್ತಿಲ್ಲ.</string>
+    <string name="default_village">ನೀಡಲಾಗಿಲ್ಲ</string>
+    <string name="otp_sent">SMS ಎಚ್ಚರಿಕೆಗಳು ಈ ಫೋನ್ ಸಂಖ್ಯೆಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="otp_sending">%1$s ಗೆ SMS ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ...</string>
+    <string name="otp_invalid">ಮುಂದುವರಿಯಲು ಸರಿಯಾದ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ.</string>
+    <string name="otp_failed">SMS ಕಳುಹಿಸುವಿಕೆ ವಿಫಲವಾಗಿದೆ: %1$s</string>
+    <string name="otp_network_failed">SMS ಎಚ್ಚರಿಕೆಗಳಿಗೆ ಮೊಬೈಲ್ ನೆಟ್‌ವರ್ಕ್ ಬೇಕು. ವಿವರ: %1$s</string>
+    <string name="password_reset_sent">ಪಾಸ್ವರ್ಡ್ ಮರುಹೊಂದಿಸುವ ಲಿಂಕ್ ಕಳುಹಿಸಲಾಗಿದೆ.</string>
+    <string name="doctor_name">ವೈದ್ಯರ ಹೆಸರು</string>
+    <string name="doctor_phone">ವೈದ್ಯರ ಫೋನ್ ಸಂಖ್ಯೆ</string>
+    <string name="doctor_login">ವೈದ್ಯರ ಲಾಗಿನ್</string>
+    <string name="phone_required">SMS ಎಚ್ಚರಿಕೆಗಳಿಗೆ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ.</string>
+    <string name="create_doctor_account">ವೈದ್ಯರ ಖಾತೆ ರಚಿಸಿ</string>
+    <string name="doctor_account_created">ವೈದ್ಯರ ಖಾತೆ ರಚಿಸಲಾಗಿದೆ. ಈ ಸಂಖ್ಯೆಗೆ SMS ಎಚ್ಚರಿಕೆಗಳು ಸಕ್ರಿಯವಾಗಿವೆ.</string>
+    <string name="consultation_fee">ವೈದ್ಯರ ಸಲಹಾ ಶುಲ್ಕ: INR 99</string>
+    <string name="pay_with_upi">UPI ಮೂಲಕ ಆನ್‌ಲೈನ್ ಪಾವತಿ</string>
+    <string name="pay_at_visit">ವೈದ್ಯರ ಭೇಟಿ ವೇಳೆ ಪಾವತಿ</string>
+    <string name="payment_started">UPI ಪಾವತಿ ಪ್ರಾರಂಭವಾಗಿದೆ</string>
+    <string name="payment_pending_visit">ಭೇಟಿ ವೇಳೆ ಪಾವತಿ ಬಾಕಿ</string>
+    <string name="payment_app_missing">UPI ಪಾವತಿ ಆಪ್ ಕಂಡುಬಂದಿಲ್ಲ.</string>
+    <string name="location_pending">ರೈತರ ಸ್ಥಳ ಪಡೆಯಲಾಗುತ್ತಿದೆ...</string>
+    <string name="location_unavailable">ಸ್ಥಳ ಲಭ್ಯವಿಲ್ಲ. ವರದಿ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="location_ready">ಸ್ಥಳ ಸಿದ್ಧವಾಗಿದೆ: %1$.5f, %2$.5f</string>
+    <string name="vet_nav_title">ವೈದ್ಯರು</string>
+    <string name="vet_doctor_title">ವೈದ್ಯರ ವರದಿಗಳು</string>
+    <string name="register_doctor_location">ವೈದ್ಯರ ಸ್ಥಳ ನೋಂದಣಿ</string>
+    <string name="doctor_registration_required">ವೈದ್ಯರ ಹೆಸರು, ಫೋನ್ ಮತ್ತು ಸ್ಥಳ ಅನುಮತಿ ಅಗತ್ಯ.</string>
+    <string name="doctor_registered">ವೈದ್ಯರ ಸ್ಥಳ ನೋಂದಾಯಿಸಲಾಗಿದೆ.</string>
+    <string name="refresh_reports">ವರದಿಗಳನ್ನು ನವೀಕರಿಸಿ</string>
+    <string name="loading_reports">ವರದಿಗಳು ಲೋಡ್ ಆಗುತ್ತಿವೆ...</string>
+    <string name="no_vet_reports">ಯಾವುದೇ ಅನಾರೋಗ್ಯ ವರದಿಗಳಿಲ್ಲ.</string>
+    <string name="vet_report_farmer">ರೈತ: %1$s (%2$s)</string>
+    <string name="vet_report_animal">ಪ್ರಾಣಿ: %1$s</string>
+    <string name="vet_report_symptoms">ಲಕ್ಷಣಗಳು: %1$s</string>
+    <string name="vet_report_notes">ಟಿಪ್ಪಣಿ: %1$s</string>
+    <string name="vet_report_payment">ಪಾವತಿ: %1$s, ಶುಲ್ಕ INR %2$d</string>
+    <string name="vet_report_assigned">ಹತ್ತಿರದ ವೈದ್ಯರು: %1$s</string>
+    <string name="nearest_doctor_pending">ಇನ್ನೂ ನಿಯೋಜಿಸಿಲ್ಲ</string>
+    <string name="vet_report_time">ವರದಿ ಸಮಯ: %1$s</string>
+    <string name="vet_report_location">ಸ್ಥಳ: %1$.5f, %2$.5f. ನಕ್ಷೆ ತೆರೆಯಲು ಟ್ಯಾಪ್ ಮಾಡಿ.</string>
+    <string name="vet_report_no_location">ಸ್ಥಳ ಹಂಚಲಾಗಿಲ್ಲ.</string>
+    <string name="new_sick_report_title">ಹೊಸ ಅನಾರೋಗ್ಯ ಪ್ರಾಣಿ ವರದಿ</string>
+    <string name="new_sick_report_body">%1$s ಗೆ %2$s ಅವರಿಂದ ಸಹಾಯ ಬೇಕಾಗಿದೆ.</string>
+    <string-array name="language_options">
+        <item>English</item>
+        <item>ಕನ್ನಡ</item>
+    </string-array>
+    <string-array name="role_options">
+        <item>ರೈತ</item>
+        <item>ವೈದ್ಯರು</item>
+    </string-array>
+    <string-array name="gender_options">
+        <item>ಪುರುಷ</item>
+        <item>ಮಹಿಳೆ</item>
+        <item>ಇತರೆ</item>
+    </string-array>
+    <string-array name="animal_types">
+        <item>ಮೇಕೆ</item>
+        <item>ಕುರಿ</item>
+        <item>ಹಸು</item>
+        <item>ಎಮ್ಮೆ</item>
+    </string-array>
+</resources>

@@ -1,0 +1,89 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function userRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    function isFarmer() {
+      return signedIn() && userRole() == 'farmer';
+    }
+
+    function isDoctor() {
+      return signedIn() && userRole() == 'doctor';
+    }
+
+    function isAdmin() {
+      return signedIn() && userRole() == 'admin';
+    }
+
+    function hasNoPasswordField() {
+      return !request.resource.data.keys().hasAny(['password']);
+    }
+
+    match /users/{uid} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow update: if signedIn() && request.auth.uid == uid && hasNoPasswordField();
+      allow create: if signedIn() && request.auth.uid == uid && hasNoPasswordField();
+      allow read, write: if isAdmin();
+    }
+
+    match /auth_lookup/{phoneId} {
+      allow get: if true;
+      allow list: if false;
+      allow create, update: if signedIn()
+        && request.auth.token.email == request.resource.data.email
+        && hasNoPasswordField();
+      allow delete: if isAdmin();
+    }
+
+    match /farmers/{farmerId} {
+      allow read, delete: if isAdmin() || isFarmer();
+      allow create, update: if (isAdmin() || isFarmer()) && hasNoPasswordField();
+
+      match /animals/{animalId} {
+        allow read, write: if isAdmin() || isFarmer();
+      }
+
+      match /vaccine_records/{recordId} {
+        allow read, write: if isAdmin() || isFarmer();
+      }
+
+      match /disease_reports/{reportId} {
+        allow create, read, update: if isAdmin() || isFarmer() || isDoctor();
+        allow delete: if isAdmin() || isFarmer();
+      }
+    }
+
+    match /veterinary_doctors/{doctorId} {
+      allow read: if signedIn();
+      allow create, update: if (isAdmin() || isDoctor()) && hasNoPasswordField();
+      allow delete: if isAdmin();
+    }
+
+    match /vet_sick_reports/{reportId} {
+      allow create, read: if isAdmin() || isFarmer() || isDoctor();
+      allow update: if isAdmin() || isDoctor();
+      allow delete: if isAdmin();
+    }
+
+    match /payments/{paymentId} {
+      allow create, read: if isAdmin() || isFarmer() || isDoctor();
+      allow update: if isAdmin();
+    }
+
+    match /notifications/{notificationId} {
+      allow create, read, update: if signedIn();
+      allow delete: if isAdmin();
+    }
+
+    match /customer_feedback/{feedbackId} {
+      allow create: if signedIn();
+      allow read, update, delete: if isAdmin();
+    }
+  }
+}

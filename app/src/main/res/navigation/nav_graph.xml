@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.gramavaxi.ui.auth.LoginFragment"
+        android:label="@string/login_title">
+        <action
+            android:id="@+id/action_login_to_dashboard"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_to_vet"
+            app:destination="@id/doctorDashboardFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_to_forgotPassword"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.gramavaxi.ui.auth.ForgotPasswordFragment"
+        android:label="@string/forgot_password_title">
+        <action
+            android:id="@+id/action_forgotPassword_to_otpVerification"
+            app:destination="@id/otpVerificationFragment" />
+        <action
+            android:id="@+id/action_forgotPassword_to_resetPassword"
+            app:destination="@id/resetPasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.gramavaxi.ui.auth.OtpVerificationFragment"
+        android:label="@string/otp_verification_title">
+        <action
+            android:id="@+id/action_otpVerification_to_resetPassword"
+            app:destination="@id/resetPasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.gramavaxi.ui.auth.ResetPasswordFragment"
+        android:label="@string/reset_password_title" />
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.gramavaxi.ui.dashboard.DashboardFragment"
+        android:label="@string/dashboard_title">
+        <action
+            android:id="@+id/action_dashboard_to_registerAnimal"
+            app:destination="@id/registerAnimalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/animalLedgerFragment"
+        android:name="com.gramavaxi.ui.ledger.AnimalLedgerFragment"
+        android:label="@string/ledger_title">
+        <action
+            android:id="@+id/action_ledger_to_registerAnimal"
+            app:destination="@id/registerAnimalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerAnimalFragment"
+        android:name="com.gramavaxi.ui.ledger.RegisterAnimalFragment"
+        android:label="@string/add_animal" />
+
+    <fragment
+        android:id="@+id/vaccineCalendarFragment"
+        android:name="com.gramavaxi.ui.calendar.VaccineCalendarFragment"
+        android:label="@string/calendar_title" />
+
+    <fragment
+        android:id="@+id/diseaseReportFragment"
+        android:name="com.gramavaxi.ui.disease.DiseaseReportFragment"
+        android:label="@string/disease_title" />
+
+    <fragment
+        android:id="@+id/paymentHistoryFragment"
+        android:name="com.gramavaxi.ui.payments.PaymentHistoryFragment"
+        android:label="@string/payment_history_title" />
+
+    <fragment
+        android:id="@+id/veterinaryDoctorFragment"
+        android:name="com.gramavaxi.ui.vet.VeterinaryDoctorFragment"
+        android:label="@string/vet_doctor_title" />
+
+    <fragment
+        android:id="@+id/doctorDashboardFragment"
+        android:name="com.gramavaxi.ui.vet.DoctorDashboardFragment"
+        android:label="@string/doctor_dashboard_title" />
+
+    <fragment
+        android:id="@+id/doctorReportsFragment"
+        android:name="com.gramavaxi.ui.vet.DoctorReportsFragment"
+        android:label="@string/doctor_reports_title" />
+
+    <fragment
+        android:id="@+id/doctorPaymentHistoryFragment"
+        android:name="com.gramavaxi.ui.vet.DoctorPaymentHistoryFragment"
+        android:label="@string/payment_history_title" />
+
+    <fragment
+        android:id="@+id/doctorProfileFragment"
+        android:name="com.gramavaxi.ui.vet.DoctorProfileFragment"
+        android:label="@string/doctor_profile_title" />
+
+    <fragment
+        android:id="@+id/notificationCenterFragment"
+        android:name="com.gramavaxi.ui.notifications.NotificationCenterFragment"
+        android:label="@string/notifications_title" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.gramavaxi.ui.profile.ProfileViewFragment"
+        android:label="@string/profile_title">
+        <action
+            android:id="@+id/action_profile_to_editProfile"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profile_to_changePassword"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_profile_to_paymentHistory"
+            app:destination="@id/paymentHistoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.gramavaxi.ui.profile.ProfileFragment"
+        android:label="@string/edit_profile" />
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.gramavaxi.ui.auth.ChangePasswordFragment"
+        android:label="@string/change_password">
+        <action
+            android:id="@+id/action_changePassword_to_resetPassword"
+            app:destination="@id/resetPasswordFragment" />
+    </fragment>
+</navigation>
